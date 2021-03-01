@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--tabela com caracteres acentuados-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alphabook - Melhore sua qualidade de vida</title>
+
+		<style>
+			body{margin: 0px;padding: 0px;}
+			
+.slide p{
+	font-size:45px;
+	text-align: center;
+	margin:0;
+padding: 30px;
+width:100px;
+box-sizing: border-box;
+}
+.slide img{width: 100%;}
+		
+        .anterior,.proximo{font-size: 40px;position:absolute;bottom: 0px;margin: 20px;}
+        .proximo {right: 0px;}
+
+
+		</style>
+
+	</head>
+	<body>
+
+	<div id="carrosel">
+
+		<div class="slide"> 
+			<img src="midias/carrossel01.jpg" alt="casal">
+			<p> Melhore sua qualidade de vida </p>
+		</div>
+
+		<div class="slide"> 
+			<img src="midias/carrossel02.jpg" alt="carrossel02">
+			<p> Melhore sua qualidade de vida </p>
+		</div>
+
+		<div class="slide"> 
+			<img src="midias/carrossel03.jpg" alt="carrossel03">
+			<p> Melhore sua qualidade de vida </p>
+		</div>
+
+	</div>
+
+	<a class="anterior" onclick="acrescentaSlides(-1)">&#9664;</a>
+
+	<a class="proximo" onclick="acrescentaSlides(1)">&#9654; </a>
+
+<script>
+var slideIndex=0;
+mostraSlides(slideIndex);
+function acrescentaSlides(n) {
+	mostraSlides(slideIndex = slideIndex + n);
+
+}
+
+function mostraSlides(n){
+	var slides = document.getElementsByClassName("slide");
+
+	if(n>=slides.length){slideIndex=0;}
+		if(n<0){slideIndex=slides.length-1;}
+
+for(i=0;i<slides.length;i++){
+	slides[i].style.display = "none";
+}
+
+slides[slideIndex].style.display= "block"; 
+
+}
+
+
+
+
+	</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--tabela com caracteres acentuados-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alphabook - Melhore sua qualidade de vida</title>
+
+		<script src="https://kit.fontawesome.com/7b98eaf50a.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="estilos.css">
+
+	</head>
+	<body>
+
+		<main>
+		<h1>Vamos montar sua roda da vida</h1>
+		<p>Responda o questionário a seguir paa descobrir quais áreas da sua vida requerem mais atenção.</p>
+
+		<form method="post" action="grafico.html">
+
+			<!--action="http://jkorpela.fi/cgi-bin/echo.cgi"-->
+
+			<fieldset>
+				<legend>Pessoal</legend>
+			<label for="questao01">Como você avalia sua saúde e disposição</label>
+			<input type="range" name="questao01" id="questao01" min="0" max="10" step="1" oninput="document.getElementById('valor01').innerHTML = this.value;"> 
+			<label id=valor01>5</label>
+
+			<label for="questao02">Como você avalia seu desenvolvimento intelectual</label>
+			<input type="range" name="questao02" id="questao02" min="0" max="10" step="1" oninput="document.getElementById('valor02').innerHTML = this.value;"> 
+			<label id=valor02>5</label>
+
+			<label for="questao03">Como você avalia seu equilíbrio emocional</label>
+			<input type="range" name="questao03" id="questao03" min="0" max="10" step="1" oninput="document.getElementById('valor03').innerHTML = this.value;"> 
+			<label id=valor03>5</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Profissional</legend>
+			<label for="questao04">Como você avalia sua realização e propósito?</label>
+			<input type="range" name="questao04" id="questao04" min="0" max="10" step="1" oninput="document.getElementById('valor04').innerHTML = this.value;"> 
+			<label id=valor04>5</label>
+
+			<label for="questao05">Como você avalia seus recursos financeiros?</label>
+			<input type="range" name="questao05" id="questao05" min="0" max="10" step="1" oninput="document.getElementById('valor05').innerHTML = this.value;"> 
+			<label id=valor05>5</label>
+
+			<label for="questao06">Como você avalia sua contribuição social?</label>
+			<input type="range" name="questao06" id="questao06" min="0" max="10" step="1" oninput="document.getElementById('valor06').innerHTML = this.value;"> 
+			<label id=valor06>5</label>
+		</fieldset>
+
+
+
+
+
+			<input type="submit">
+
+		</form>
+
+	</main>
+
+
+
+
+	</body>
+</html>

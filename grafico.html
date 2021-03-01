@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--tabela com caracteres acentuados-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alphabook - Melhore sua qualidade de vida</title>
+
+		<script src="https://kit.fontawesome.com/7b98eaf50a.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="estilos.css">
+
+	</head>
+	<body>
+		<header>
+			<i class="fas fa-bars" onclick="abreMenu()"></i>
+			<i class="fas fa-times" onclick="fechaMenu()"></i>
+		</header>
+
+		<nav id="menu">
+			<img src="midias/avatar.jpg">
+			<p>Juliana Nascimento</p>
+			<p><strong>78</strong> Pontos</p>
+
+			<ul>
+				<li><a href="grafico.html">Meu Gráfico</a></li>
+				<li><a href="conta.html">Minha conta</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="ajuda.html">Ajuda</a></li>
+			</ul>
+
+		</nav>	
+
+
+		<main>
+
+			<h1>Deslize o dedo pelo gráfico para explorar</h1>
+			<img id="grafico" src="midias/grafico.png">
+			
+
+			<a href="plenitude.html"><button id="plenitude">
+			<strong>Plenitude e Felicidade</strong><br>
+			Clique aqui para dicas
+			</button></a>
+
+
+		</main>
+	</body>
+
+	<script>
+
+function abreMenu() {
+  document.getElementById("menu").style.height = "100%";
+
+  document.getElementsByClassName("fa-bars")[0].style.display = "none";
+
+  document.getElementsByClassName("fa-times")[0].style.display = "block";
+}
+
+function fechaMenu() {
+  document.getElementById("menu").style.height = "0%";
+
+  document.getElementsByClassName("fa-bars")[0].style.display = "block";
+
+  document.getElementsByClassName("fa-times")[0].style.display = "none";
+}
+
+	</script>
+</html>
